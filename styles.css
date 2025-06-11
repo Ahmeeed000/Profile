@@ -1,0 +1,142 @@
+@font-face {
+    font-family: Project;
+    src: url(Project-9.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Orletta;
+    background-image: radial-gradient(rgb(205, 185, 138), rgb(166, 231, 248));
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(5, 5, 5, 0.353);
+    padding: 25px;
+    position: relative;
+}
+
+.profile-card::before {
+    content: "";
+    background-color: rgb(64, 27, 196);
+    top: 0;
+    left: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 35%;
+    width: 100%;
+    position: absolute;
+}
+
+.image {
+    position: relative; 
+    width: 150px;
+    height: 150px;
+    background-color: rgb(83, 83, 237);
+    border-radius: 50%;
+    padding: 5px;
+
+    
+}
+
+.image .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 4px rgb(244, 244, 248) solid;   
+    border-radius: 50%;
+    
+}
+
+
+
+.profile-card .Job {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+
+.Job .Job-name {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: Project;
+    padding-bottom: 5px;
+}
+
+.Job .Job-Description {
+    font-size: 15px;
+    font-weight: 200;
+    font-family: monospace;
+}
+
+.profile-card .media {
+    display: flex;
+    align-items: center;
+    size: 50px;
+    
+}
+
+.media .link {
+    background-color: rgb(131, 131, 174);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    gap: 10px;
+    margin: 10px;
+    padding: 15px;
+    padding-bottom: 12px;
+    transition: all 0.5s;
+}
+
+.media .link:hover, .link:focus {
+    background-color: antiquewhite;
+    transform: scale(1.5);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    
+}
+
+.buttons button {
+    background-color: rgba(163, 167, 253, 0.11);
+    color: black;
+    border: wheat 1px solid;
+    border-radius: 25px;
+    padding: 5px 15px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    padding-bottom: 4px;
+
+}
+
+.buttons button:hover, button:focus {
+    background-color: rgb(37, 56, 143);
+    color: white;
+    font-weight: bolder;
+    transform: scale(1.2);
+}
